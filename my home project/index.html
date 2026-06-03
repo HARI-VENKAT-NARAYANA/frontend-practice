@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY HOME PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+
+        .mainmenu {
+            display: flex;
+            list-style: none;
+            padding:20px;
+        }
+
+        .mainmenu-items {
+            display: inline;
+        }
+
+        .mainmenu-link {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        #home {      
+            display:flex;
+            justify-content: center ;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: column;
+            padding: 60px 80px;
+        
+        }
+
+        #about h1 {
+            font-size: 36px;
+            letter-spacing: 4px;
+            color:black;
+            margin-bottom: 30px;
+           
+        }
+
+        .about-inner {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .img-person {
+            width: 220px;
+            height: 260px;
+            
+        }
+
+        .about-inner p {
+            font-size: 25px;
+            color: #444;
+        }
+
+       
+        .awards-heading {
+            font-size: 36px;
+            letter-spacing: 4px;
+            color:black;
+            margin: 50px 0 30px 0;
+            padding-left: 15px;
+        }
+
+        .awards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .award-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding:20px;
+            
+        }
+
+        .award-img {
+            width: 220px;
+            height: 220px;
+        }
+
+        .award-item p {
+            font-size: 20px;
+            color:black;
+            margin:20px;
+        }
+
+        
+    
+
+        #projects h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            padding-left: 15px;
+        }
+
+        .project-item {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .project-item img {
+            width: 420px;
+            height: 280px;
+            border-radius: 4px;
+    
+        }
+
+        .project-item h2 {
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .pro {
+            font-size: 20px;
+            margin-left:20px;
+    
+        }
+          </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://img.staticmb.com/mbimages/photo_dir/developer/original_images/51212/My-Home-Group-1564636049004-myhomeconstructions-logo.png"  class="mainlogoo">
+
+        <ul class="mainmenu">
+            <li class="mainmenu-items"><a href="#home" class="mainmenu-link">home</a></li>
+            <li class="mainmenu-items"><a href="#about" class="mainmenu-link">about</a></li>
+            <li class="mainmenu-items"><a href="#projects" class="mainmenu-link">projects</a></li>
+            <li class="mainmenu-items"><a href="#" class="mainmenu-link">gallery</a></li>
+            <li class="mainmenu-items"><a href="#" class="mainmenu-link">contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home">
+        <img src="https://myhomeconstructions.com/images/b/2.jpg" width="1200px" height="800px">
+    </div>
+
+    <div id="about">
+        <h1>ABOUT</h1>
+        <div class="about-inner">
+    <img src="data:image/jpeg;base64,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" class="img-person">
+            <p>Dr. Jupally Rameswar Rao is an Indian billionaire entrepreneur who transitioned from a career in homeopathic medicine to establish the multi-billion dollar My Home Group in 1981. Under his visionary leadership, the company transformed Hyderabad's skyline with iconic residential townships and diversified into cement production, power, and digital media. Beyond business, he is a deeply spiritual philanthropist who served as a primary donor and driving force behind constructing the 216-foot Statue of Equality monument. As a mainstay on the Forbes Billionaires List, he now guides the conglomerate's strategic vision while his sons oversee daily executive operations. His dedication to community welfare and industrial excellence has earned him high-profile accolades, including a prestigious international safety award at the British Parliament.</p>
+        </div>
+
+        <h1 class="awards-heading">AWARDS</h1>
+        <div class="awards">
+            <div class="award-item">
+                <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_380+to_webp+ret_img/www.myhomeconstructions.com/wp-content/uploads/2025/10/Forbes-Award-Image-for-Website-1.jpg" alt="" class="award-img">
+                <p>Forbes India Developers A-List 2025</p>
+            </div>
+            <div class="award-item">
+                <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_380+to_webp+ret_img/www.myhomeconstructions.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-22-at-11.28.09_26fc3c73.jpg" alt="" class="award-img">
+                <p>Great Place To Work - Tellapur Technocity Private Limited 2025</p>
+            </div>
+            <div class="award-item">
+                <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_380+to_webp+ret_img/www.myhomeconstructions.com/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-21-at-4.01.41-PM.jpeg" alt="" class="award-img">
+                <p>Prestigious GRI India Awards 2024</p>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="projects">
+        <h1>PROJECTS</h1>
+
+        <div class="project-item">
+            <img src="https://www.myhomeconstructions.com/my-home-grava/assets/img/grava_new/1.webp">
+            <div>
+                <h2>My Home Grava</h2>
+                <p class="pro">Grava Residences stands as an architectural masterpiece — seven magnificent towers that redefine the essence of luxury living. Among them, one tower ascends to an awe-inspiring Ground + 54 floors, while the remaining six rise gracefully with Ground + 49 floors each, together composing a skyline of unmatched grandeur. Nestled in the prestigious Neopolis, Kokapet, My Home Grava Residences offers much to take pride in. Spanning 17.52 acres with 80% open space, the enclave is designed to let every breath feel freer, every moment more expansive. Each tower is a vision of thoughtful design, crafted to meet the aspirations of affluent, multi-generational families who value both elegance and comfort.</p>
+            </div>
+        </div>
+
+        <div class="project-item">
+                <img src="https://www.myhomeconstructions.com/my-home-vipina/assests/img/my-home-vipina-banner.webp">
+            <div>
+                <h2>My Home Vipina</h2>
+                <p class="pro">My Home Vipina is an unusual narrative of urban luxury in a natural setting of green and blue. Right from the entrance to the upscale community within, Vipina ushers you into a healthy lifestyle. Breathe in the freshness, give your batteries a much needed boost and break free of the mundane. The extraordinary is calling. This stunning clubhouse, spread over one lakh sq. ft. across 4 sprawling floors, is a true work of art. Whether you choose an invigorating workout at the gym or a calming meditation session, there's something here for every mood and need.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
